@@ -21,4 +21,17 @@
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
         }];
     }
+
+    - (void) isInstalled: (CDVInvokedUrlCommand*) command {
+        NSString* url = [command.arguments objectAtIndex:0];
+        CDVPluginResult* pluginResult = nil;
+
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:url]]) {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+        } else {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"URL schema not installed."];
+        }
+
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }
 @end;

@@ -6,4 +6,5 @@
 
 @interface OpenSchemeUrl : CDVPlugin
     - (void) open: (CDVInvokedUrlCommand*) command;
+    - (void) isInstalled: (CDVInvokedUrlCommand*) command;
 @end;
