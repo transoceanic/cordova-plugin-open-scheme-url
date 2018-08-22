@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomaslindstrom/cordova-plugin-open-scheme-url.git"
+    "url": "git+https://github.com/transoceanic/cordova-plugin-open-scheme-url.git"
   },
   "keywords": [
     "cordova",
@@ -24,10 +24,10 @@
     "cordova-ios",
     "cordova-android"
   ],
-  "author": "Thomas Lindstrøm <t@hom.as>",
+  "author": "Thomas Lindstrøm <t@hom.as> Fork by Andrey Feldman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thomaslindstrom/cordova-plugin-open-scheme-url/issues"
+    "url": "https://github.com/transoceanic/cordova-plugin-open-scheme-url/issues"
   },
-  "homepage": "https://github.com/thomaslindstrom/cordova-plugin-open-scheme-url#readme"
+  "homepage": "https://github.com/transoceanic/cordova-plugin-open-scheme-url#readme"
 }
