@@ -30,7 +30,7 @@ public class OpenSchemeUrl extends CordovaPlugin {
         return false;
     }
 
-    private void isInstalled(String packageId) {
+    private void isInstalled(String packageId, CallbackContext callbackContext) {
 	    PackageManager pm = this.cordova.getActivity().getPackageManager();
 	    try {
 	        pm.getPackageInfo(packageId, PackageManager.GET_ACTIVITIES);
